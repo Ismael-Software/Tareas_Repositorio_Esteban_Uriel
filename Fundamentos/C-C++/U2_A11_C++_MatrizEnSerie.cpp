@@ -5,29 +5,26 @@ using namespace std;
 
 int main()
 {
-    int f, c; // Variables para filas y columnas
+    int f, c;
     
-    // Pedir al usuario las dimensiones de la matriz
     cout << "Ingrese el numero de filas: ";
     cin >> f;
     cout << "Ingrese el numero de columnas: ";
     cin >> c;
     
-    int M[f][c]; // Declarar matriz con las dimensiones ingresadas
+    int M[f][c]; 
     int i, j;
+    int contador = 1;
     
-    // Llenar la matriz con valores
     for(i = 0; i < f; i++)
     {
         for(j = 0; j < c; j++)
         {
-            cout << "Escribe un valor para [" << i << "][" << j << "]: ";
-            cin >> M[i][j];
-        }
+            M[i][j] = contador; 
+            contador++; 
     }
     
-    // Mostrar la matriz
-    cout << "\nLa matriz ingresada es:" << endl;
+    cout << "\nLa matriz con valores consecutivos es:" << endl;
     for(i = 0; i < f; i++)
     {
         for(j = 0; j < c; j++)

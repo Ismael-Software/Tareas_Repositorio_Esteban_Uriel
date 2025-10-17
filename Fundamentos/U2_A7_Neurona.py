@@ -32,10 +32,7 @@ Tabla_bernoulli=[
 (0, 0, 0),
 (0, 1, 1),
 (1, 0, 1),
-(1, 1, 1)
-    ]
-
-
+(1, 1, 1)    ]
 
 def funcion(net):
     if net>=0:
@@ -43,10 +40,9 @@ def funcion(net):
     else:
         return 0
 
-# Bucle de aprendizaje hasta que no haya errores
 error_total=1
 iteraciones=0
-max_iteraciones=100  # Para evitar bucles infinitos
+max_iteraciones=100 
 
 while error_total>0 and iteraciones<max_iteraciones:
     error_total=0
@@ -63,7 +59,6 @@ while error_total>0 and iteraciones<max_iteraciones:
             error_total=error_total+1
     iteraciones=iteraciones+1
 
-# Verificación final
 print("Resultado final:")
 print("Numero de etapas",iteraciones,"Pesos finales: w0={w0}, w1={w1}, w2={w2}")
 for patron in Tabla_bernoulli:
