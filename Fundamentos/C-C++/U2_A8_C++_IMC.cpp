@@ -3,15 +3,13 @@
 
 using namespace std;
 
-int main() {
-    double peso = 100;
-    int edad = 23;
-    double altura = 1.80;
-    string nombre = "Esteban";
+main() {
 
-    double IMC = peso / (altura * altura);
+}
+
+void multiplicacion_funcion()
+{   num1=12, num2=23;
+    Multi= num1 * num2;
+    cout<< "Resultado de " << Multi << endl;
     
-    cout << nombre << " tiene un IMC de " << IMC << endl;
-    
-    return 0;
 }
